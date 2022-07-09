@@ -20,3 +20,30 @@
     }
 
 }
+
+.rotate {
+    animation: rotation 20s infinite linear;
+}
+
+.pause-rotate {
+    transition: all 10s ease
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+    
+}
+
+@media  screen and (max-width: 768px) {
+    .song-container{
+        img{
+            width: 60%;
+        }
+    }
+    
+}
